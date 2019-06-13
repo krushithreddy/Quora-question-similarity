@@ -1,6 +1,6 @@
-# # Quora-question-similarity
-1. Business Problem
-1.1 Description
+# Quora-question-similarity
+## 1. Business Problem
+###1.1 Description
 Quora is a place to gain and share knowledge—about anything. It’s a platform to ask questions and connect with people who contribute unique insights and quality answers. This empowers people to learn from each other and to better understand the world.
 
 Over 100 million people visit Quora every month, so it's no surprise that many people ask similarly worded questions. Multiple questions with the same intent can cause seekers to spend more time finding the best answer to their question, and make writers feel they need to answer multiple versions of the same question. Quora values canonical questions because they provide a better experience to active seekers and writers, and offer more value to both of these groups in the long term.
@@ -34,11 +34,16 @@ Interpretability is partially important.
 - Number of rows in Train.csv = 404,290
 
 2.1.2 Example Data point
-"id","qid1","qid2","question1","question2","is_duplicate"
-"0","1","2","What is the step by step guide to invest in share market in india?","What is the step by step guide to invest in share market?","0"
-"1","3","4","What is the story of Kohinoor (Koh-i-Noor) Diamond?","What would happen if the Indian government stole the Kohinoor (Koh-i-Noor) diamond back?","0"
-"7","15","16","How can I be a good geologist?","What should I do to be a great geologist?","1"
-"11","23","24","How do I read and find my YouTube comments?","How can I see all my Youtube comments?","1"
+"id","qid1","qid2","question1","question2","is_duplicate".
+
+"0","1","2","What is the step by step guide to invest in share market in india?","What is the step by step guide to invest in share market?","0".
+
+"1","3","4","What is the story of Kohinoor (Koh-i-Noor) Diamond?","What would happen if the Indian government stole the Kohinoor (Koh-i-Noor) diamond back?","0".
+
+"7","15","16","How can I be a good geologist?","What should I do to be a great geologist?","1".
+
+"11","23","24","How do I read and find my YouTube comments?","How can I see all my Youtube comments?","1".
+
 2.2 Mapping the real world problem to an ML problem
 2.2.1 Type of Machine Leaning Problem
 It is a binary classification problem, for a given pair of questions we need to predict if they are duplicate or not.
